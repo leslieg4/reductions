@@ -14,7 +14,7 @@ sum_array(int N, int A[])
    // Put your code here, return the correct result
    int sum = 0;
 
-   for (int i; i < N; i++) {
+   for (int i = 0; i < N; i++) {
       sum += A[i];
    }
 
