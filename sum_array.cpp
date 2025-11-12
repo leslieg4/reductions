@@ -12,7 +12,13 @@ sum_array(int N, int A[])
    // and return that sum to the caller
 
    // Put your code here, return the correct result
-   return 0;
+   double sum = 0.0;
+
+   for (int i; i < N; i++) {
+      sum += A[i];
+   }
+   
+   return sum;
 }
 
 
