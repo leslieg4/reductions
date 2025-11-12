@@ -18,6 +18,18 @@ sum_rows(int N, int A[], int y[])
    // all N coluimns of row row A[i,*] and place the sum into y[i]
 
    // Put your code here, return the correct result
+
+   // go through each row i in A[]
+   for (int i = 0; i < N; i++) {
+      int sum = 0; // initialize
+
+      for (int j = 0; j < N; j++) { //sum all columns in row i
+         sum += A[i * N + j]; // row major format
+      }
+      
+      y[i] = sum; // place sum into y[i]
+   }
+
 }
 
 int main(int ac, char*av[])
