@@ -39,8 +39,10 @@ int main(int ac, char*av[])
    int y[N];
 
    // print number of threads being used
-   #pragma omp parellel {
-      #pragma omp single {
+   #pragma omp parallel 
+   {
+      #pragma omp single 
+      {
          printf("Number of threads being used: %d\n", omp_get_num_threads());
       }
    }
