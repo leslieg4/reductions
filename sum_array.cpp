@@ -12,12 +12,14 @@ sum_array(int N, int A[])
    // and return that sum to the caller
 
    // Put your code here, return the correct result
-   int sum = 0;
+   int sum = 0; // initialize the sum
 
+   // loop through the values of A[]
    for (int i = 0; i < N; i++) {
-      sum += A[i];
+      sum += A[i]; // sum all values
    }
 
+   // return sum to caller
    return sum;
 }
 
